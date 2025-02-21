@@ -31,7 +31,7 @@ def get_steam_library(library_path):
 
     return games
 
-def main():
+def find_launch():
 
     default_path = os.path.expandvars(r"C:\Program Files (x86)\Steam\steamapps")
     user_path = input(f"Enter your Steam library path (press enter to use default: {default_path}): ").strip()
@@ -50,9 +50,21 @@ def main():
             webbrowser.open(f"steam://rungameid/{int(games[game_index][0])}")
         except Exception as e:
             print(f"Error with input or game launch: {e}")
-        
     else:
         print("No games found or unable to read the library.")
+
+def mini_launch():
+    webbrowser.open("steam://open/minigameslist")
+
+def main():
+    print("### WELCOME TO STEAMYLAUNCH! ###")
+    opt = input("Use python launcher or steam launcher? (p/s): ")
+    if(opt == "p"):
+        find_launch()
+    elif(opt == "s"):
+        mini_launch()
+    else:
+        print("An error occured. Please relaunch the program.")
 
 if __name__ == "__main__":
     main()
