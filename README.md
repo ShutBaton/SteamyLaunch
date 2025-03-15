@@ -17,7 +17,7 @@ This is really easy.
 
 1) Download `main.py` and `settings.txt`.
 2) Make sure they are in the same directory.
-3) Run `main.py` to use SteamyLaunch
+3) Run `main.py` to use SteamyLaunch, using Python. Python 3.11 or newer is a safe bet.
 
 ## Help
 
