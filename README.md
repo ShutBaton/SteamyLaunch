@@ -11,6 +11,14 @@ SteamyLaunch is a Python program designed to help you search for and launch your
 - **Mini-Games List**: Access and launch games from Steam's mini-games list directly through the program.
 - **Settings**: Save a default Steam Library location to settings for the program to automatically assume.
 
+## Install
+
+This is really easy.
+
+1) Download `main.py` and `settings.txt`.
+2) Make sure they are in the same directory.
+3) Run `main.py` to use SteamyLaunch
+
 ## Help
 
 **Q:** *How do I find the `steamapps` directory in other library locations for SteamyLaunch?*
