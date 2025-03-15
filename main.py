@@ -110,7 +110,7 @@ def main():
     opt = input("PyLaunch, QuickLaunch, MiniLaunch or Settings? (p/q/m/s): ")
     if(opt == "p"):
         py_launch()
-    if(opt == "q"):
+    elif(opt == "q"):
         quick_launch()
     elif(opt == "m"):
         mini_launch()
